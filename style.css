@@ -1,0 +1,63 @@
+*{box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("./TTLakes.woff2") format("woff2");
+}
+ 
+body {
+    font-family: "TT Lakes", sans-serif;
+}
+
+
+ @media (max-width: 767px) {
+    .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+    }
+ 
+
+button,
+input,
+textarea {
+    font: inherit;
+
+}
+
+.menu, 
+.repair, 
+.checkstatus {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+.menu:hover, 
+.repair:hover, 
+.checkstatus:hover {
+   opacity: 0.8;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+ .burgerlogo,
+  .repairlogo, 
+  .checkstatuslogo {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+  }
+  .repair{
+    margin-left: 30px;
+  }
+  .logo {
+    width: 96.55px;
+    height: 50.81px;
+  }
+ }
