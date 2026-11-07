@@ -1,94 +1,87 @@
-*{box-sizing: border-box;
-margin:0;
-padding:0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-    font-family: "TT Lakes";
-    src: url("./TTLakes/TTLakes-Regular.woff") format("woff");
+  font-family: "TT Lakes";
+  src: url("./TTLakes/TTLakes-Regular.woff") format("woff");
 }
 
-
- 
 body {
-    font-family: "TT Lakes", sans-serif;
+  font-family: "TT Lakes", sans-serif;
 }
 
-
-
-    .header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 16px;
-    }
- 
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+}
 
 button,
 input,
 textarea {
-    font: inherit;
-
+  font: inherit;
 }
 
-.menu, 
-.repair, 
+.menu,
+.repair,
 .checkstatus,
 .chat,
 .call,
 .profile {
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
 }
-.menu:hover, 
-.repair:hover, 
+.menu:hover,
+.repair:hover,
 .checkstatus:hover,
 .chat:hover,
 .profile:hover,
-.call:hover{
-   opacity: 0.8;
+.call:hover {
+  opacity: 0.8;
   visibility: visible;
   transition: 0.3s;
 }
 
- .burgerlogo,
-  .repairlogo, 
-  .checkstatuslogo,
-  .profilelogo, 
-  .calllogo,
-  .chatlogo
-   {
-    display: flex;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-  }
-  .repair{
-    margin-left: 30px;
+.burgerlogo,
+.repairlogo,
+.checkstatuslogo,
+.profilelogo,
+.calllogo,
+.chatlogo {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+.repair {
+  margin-left: 30px;
+}
+.call {
+  margin-left: 129px;
+}
+.logo {
+  width: 96.55px;
+  height: 50.81px;
+}
 
-  }
-  .call{
-    margin-left: 129px;
+.chat,
+.call,
+.profile {
+  display: none;
+}
+@media (min-width: 768px) {
+  .chat,
+  .call,
+  .profile {
+    display: flex;
   }
   .logo {
-    width: 96.55px;
-    height: 50.81px;
-  }
-
-  .chat,
-.call,
-.profile{
-    display: none;
-}
-  @media(min-width:768px) {
-     .chat,
-.call,
-.profile{
-display: flex;
-  } 
-.logo{
     margin-left: 30px;
-}
+  }
 }
