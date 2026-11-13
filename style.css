@@ -91,7 +91,8 @@ textarea {
 }
 main {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   gap: 16px;
   background-color: #f8f8f8;
 }
@@ -122,6 +123,65 @@ h1 {
 .main__actions {
   display: none;
 }
+.tabs__input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.tabs__navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 8px;
+  scrollbar-width: none;
+}
+.tabs__label {
+  display: block;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.tabs__content {
+  display: none;
+  padding: 16px;
+}
+.tabs__content {
+  display: none;
+  padding: 16px;
+}
+.tabs__content {
+  display: none;
+  padding: 16px;
+}
+#tab-1:checked ~ .tabs__content--first {
+  display: block;
+}
+#tab-2:checked ~ .tabs__content--second {
+  display: block;
+}
+
+#tab-1:checked ~ .tabs__navigation label[for="tab-1"],
+#tab-2:checked ~ .tabs__navigation label[for="tab-2"] {
+  background-color: white;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+
+.tabs__layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tabs__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   .chat,
   .call,
