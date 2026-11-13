@@ -148,14 +148,6 @@ h1 {
   display: none;
   padding: 16px;
 }
-.tabs__content {
-  display: none;
-  padding: 16px;
-}
-.tabs__content {
-  display: none;
-  padding: 16px;
-}
 #tab-1:checked ~ .tabs__content--first {
   display: block;
 }
@@ -203,6 +195,20 @@ h1 {
   .main__actions {
     display: none;
   }
+  .tabs__layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .tabs__text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .tabs__image {
+    width: 50%;
+    height: auto;
+  }
 }
 @media (min-width: 1120px) {
   .header {
@@ -232,5 +238,21 @@ h1 {
     background: none;
     cursor: pointer;
     font-weight: 700;
+  }
+  .tabs__layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 36px;
+  }
+
+  .tabs__text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .tabs__image {
+    width: 50%;
+    height: auto;
   }
 }
