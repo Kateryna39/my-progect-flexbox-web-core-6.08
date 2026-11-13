@@ -11,6 +11,7 @@
 
 body {
   font-family: "TT Lakes", sans-serif;
+  
 }
 
 .header {
@@ -95,6 +96,7 @@ main {
   align-items: stretch;
   gap: 16px;
   background-color: #f8f8f8;
+  
 }
 h1 {
   color: black;
@@ -147,6 +149,7 @@ h1 {
 .tabs__content {
   display: none;
   padding: 16px;
+ 
 }
 #tab-1:checked ~ .tabs__content--first {
   display: block;
@@ -156,22 +159,27 @@ h1 {
 }
 
 #tab-1:checked ~ .tabs__navigation label[for="tab-1"],
-#tab-2:checked ~ .tabs__navigation label[for="tab-2"] {
+#tab-2:checked ~ .tabs__navigation label[for="tab-2"],
+#tab-3:checked ~ .tabs__navigation label[for="tab-3"],
+#tab-4:checked ~ .tabs__navigation label[for="tab-4"] {
   background-color: white;
   border: 2px solid #b8ffec;
   border-radius: 6px;
+ 
 }
 
 .tabs__layout {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  
 }
 
 .tabs__image {
   display: block;
   width: 100%;
   height: auto;
+ 
 }
 
 @media (min-width: 768px) {
