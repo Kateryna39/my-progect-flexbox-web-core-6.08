@@ -1,21 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Услуги и сервисы</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="header">
-    <button class="menu"> <img src="./burger.svg" alt="" class="burgerlogo"/></button>
-     <img class="logo" src="./Group.svg" alt="Логотип CPS">
-    <button class="repair"> <img src="./repair.svg" alt="" class="repairlogo"/></button>
-    <button class="checkstatus"><img src="./checkstatus.svg" alt="" class="checkstatuslogo"/></button>
-  </header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <button class="menu">
+        <img src="./burger.svg" alt="" class="burgerlogo" />
+      </button>
+      <span class="header__divider__burger" aria-hidden="true"></span>
+      <img class="logo" src="./Group.svg" alt="Логотип CPS" />
+      <button class="call">
+        <img src="./call.svg" alt="" class="calllogo" />
+      </button>
+      <button class="chat">
+        <img src="./chat.svg" alt="" class="chatlogo" />
+      </button>
+      <button class="profile">
+        <img src="./profile.svg" alt="" class="profilelogo" />
+      </button>
+      <span class="header__divider__repair" aria-hidden="true"></span>
+      <button class="repair">
+        <img src="./repair.svg" alt="" class="repairlogo" />
+      </button>
+      <button class="checkstatus">
+        <img src="./checkstatus.svg" alt="" class="checkstatuslogo" />
+      </button>
+    </header>
 
-  <main>
-        <h1> </h1>
-  </main>
-</body>
+    <main>
+      <div class="main__header">
+        <h1 class="main__title">Услуги и сервисы</h1>
+
+        <div class="main__actions">
+          <button class="main__button" type="button">
+            Оставить заявку
+            <img src="./repair.svg" alt="" class="repairlogo" />
+          </button>
+
+          <button class="main__button" type="button">
+            Статус ремонта
+            <img src="./checkstatus.svg" alt="" class="checkstatuslogo" />
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
